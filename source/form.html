@@ -48,13 +48,13 @@
   </div>
 
   <main class="main">
-    <section class="form">
-      <h1 class="form__title">Подбор программы</h1>
-      <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="cat" action="https://echo.htmlacademy.ru" method="post">
+    <section class="choosing">
+      <h1 class="choosing__title">Подбор программы</h1>
+      <p class="choosing__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
 
-        <fieldset class="cat__field">
+        <fieldset class="cat fieldset">
           <label class="cat__label form__label">
             <span class="cat__span form__span">Имя:*</span>
             <input class="cat__input " type="text" placeholder="Барсик" required>
@@ -70,7 +70,7 @@
         </fieldset>
 
 
-        <fieldset class="result result__field">
+        <fieldset class="result fieldset">
           <input type="radio" id="radio-1" name="choice" checked>
           <label class="result__label" for="radio-1">Похудение</label>
           <input type="radio" id="radio-2" name="choice">
@@ -78,7 +78,7 @@
           <input type="radio" id="radio-3" name="choice">
           <label class="result__label" for="radio-3">Не знаю (Нужен ваш совет)</label>
         </fieldset>
-        <fieldset class="owner__field owner">
+        <fieldset class="owner fieldset">
           <h3 class="owner__title fieldset__title">Контактные данные (владельца кота)</h3>
           <div class="owner__email">
             <label class="owner__label form__label">
@@ -120,29 +120,29 @@
           </div>
           </div>
         </fieldset>
-        <fieldset class="comment__field">
-          <h3 class="owner__title fieldset__title">Комментарий</h3>
-          <textarea class="owner__textarea" rows="8" id="for-textarea"
+        <fieldset class="comment fieldset">
+          <h3 class="comment__title fieldset__title">Комментарий</h3>
+          <textarea class="comment__textarea" rows="8" id="for-textarea"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="addings">
-          <h3 class="addings__title ">Дополнительно</h3>
+        <fieldset class="addings fieldset">
+          <h3 class="addings__title fieldset__title">Дополнительно</h3>
           <ul class="addings__list">
             <li class="addings__item">
               <input class="addings__input" type="checkbox" id="check-1" checked="">
-              <label class="adding__label" for="check-1" tabindex="0">Сахарозаменитель</label>
+              <label class="addings__label" for="check-1" tabindex="0">Сахарозаменитель</label>
             </li>
             <li class="addings__item">
               <input class="addings__input" type="checkbox" id="check-2">
-              <label class="adding__label" for="check-2" tabindex="0">Питьевая вода</label>
+              <label class="addings__label" for="check-2" tabindex="0">Питьевая вода</label>
             </li>
             <li class="addings__item">
               <input class="addings__input" type="checkbox" id="check-3">
-              <label class="adding__label" for="check-3" tabindex="0">Молоко</label>
+              <label class="addings__label" for="check-3" tabindex="0">Молоко</label>
             </li>
             <li class="addings__item">
               <input class="addings__input" type="checkbox" id="check-4">
-              <label class="adding__label" for="check-4" tabindex="0">Витамины</label>
+              <label class="addings__label" for="check-4" tabindex="0">Витамины</label>
             </li>
           </ul>
         </fieldset>
