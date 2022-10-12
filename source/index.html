@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 
 <body class="page">
   <div class="page__container">
@@ -16,36 +17,29 @@
           <img class="header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт энерджи.">
         </picture>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span></button>
-
-        <div class="main-nav__wrapper">
-          <input id="main-nav__toggle" type="checkbox">
-          <label class="main-nav__btn" for="main-nav__toggle">
-            <span class="main-nav__spn"></span>
-          </label>
-          <ul class="main-nav__list">
-            <li class="main-nav__item ">
-              <a class="main-nav__link main-nav__link--active" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--review">
-              <a class="main-nav__link" href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
+      <nav class="menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li  class="menu__item">
+            <a class="menu__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
       </nav>
-
-
 
     </header>
   </div>
@@ -54,9 +48,9 @@
     <section class="program">
       <h2 class="program__title">Функциональное питание для котов</h2>
       <p class="program__text">Занялся собой? Займись котом!</p>
-      <picture>
+      <!-- <picture>
         <img class="program__image" src="img/index-can-mobile.png" alt="Cat enegry курица.">
-      </picture>
+      </picture> -->
       <a class="program__link" href="form.html">Подобрать программу</a>
     </section>
     <section class="categories">
@@ -128,7 +122,7 @@
         <div class="example__image before-after">
           <div class="before-after__effects">
             <picture>
-              <img class="before-after__image before-after__image--before" src="img/cat-slider-mobile.png" >
+              <img class="before-after__image before-after__image--before" src="img/cat-slider-mobile.png">
             </picture>
 
           </div>
@@ -136,18 +130,18 @@
       </div>
     </section>
 
-  <section class="contacts">
-    <div class="contacts__info">
-      <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
-    </div>
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1664911794117!5m2!1sru!2sru"
-        height="362" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </section>
+    <section class="contacts">
+      <div class="contacts__info">
+        <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1664911794117!5m2!1sru!2sru"
+          height="362" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
