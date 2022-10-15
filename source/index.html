@@ -23,7 +23,7 @@
           <span></span>
         </label>
         <ul class="menu__box">
-          <li  class="menu__item">
+          <li class="menu__item">
             <a class="menu__link" href="#">
               Главная
             </a>
@@ -94,7 +94,7 @@
           <picture>
             <img class="advantages__image" src="img/clock.png" alt="Изменения к лучшему.">
           </picture>
-          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
+          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
     </section>
@@ -107,23 +107,49 @@
             часов в день. </p>
           <div class="example__price-wrapper">
             <ul class="example__list">
-              <li class="example__item item">
-                <p class="item__value">5 кг</p>
-                <p class="item__title">снижение веса</p>
+              <li class="example__item">
+                <div class="example__wrapper">
+                  <p class="example__value">5 кг</p>
+                  <p class="example__mintitle">снижение <br>веса</p>
+                </div>
               </li>
-              <li class="example__item item">
-                <p class="item___value">60 дней</p>
-                <p class="item___title">затрачено времени</p>
+              <li class="example__item">
+                <div class="example__wrapper">
+                  <p class="example__value">60 дней</p>
+                  <p class="example__mintitle">затрачено времени</p>
+                </div>
               </li>
             </ul>
             <p class="example__price">затраты на питание: <span class="example__price-value">15 000 руб.</span></p>
           </div>
         </div>
         <div class="example__image before-after">
-          <div class="before-after__effects">
-            <picture>
+          <div class="example__cat">
+            <div class="case__slider">
+              <div class="example_slider slider">
+                <div class="slider__container slider__container--fat">
+                  <div class="slider__img slider__img--fat">
+
+                  </div>
+                </div>
+                <div class="slider__container slider__container--slim">
+                  <div class="slider__img  slider__img--slim">
+
+                  </div>
+                </div>
+                <button class="slider__control" type="button">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
+                    <path d="M16 11L8 20L16 29V11Z" fill="#666666"/>
+                    <path d="M32 20L24 11V29L32 20Z" fill="#666666"/>
+                    <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+                    </svg>
+                </button>
+              </div>
+            </div>
+            <!-- <picture>
               <img class="before-after__image before-after__image--before" src="img/cat-slider-mobile.png">
-            </picture>
+            </picture> -->
 
           </div>
         </div>
@@ -191,7 +217,7 @@
       </div>
     </div>
   </footer>
-
+<script src="./js/script.js"></script>
 
 </body>
 
