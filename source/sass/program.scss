@@ -1,16 +1,16 @@
 .program {
-  height: 500px;
+  min-height: 500px;
   position: relative;
   padding-top: 27px;
   margin-bottom: 20px;
-  background: url('../img/index-background-desktop.jpg') no-repeat;
+  background: url('../img/index-background-desktop.jpg') no-repeat top;
   overflow: hidden;
 
 }
 
 .program::after {
   content: '';
-  background: rgba(#68B738,0.85); // фон с прозрачностью 70%
+  background: rgba(#68B738, 0.85); // фон с прозрачностью 70%
   display: block;
   position: absolute;
   width: 100%;
@@ -24,61 +24,47 @@
   content: '';
   background: url('../img/index-can-mobile.png');
   width: 280px;
-height: 270px;
-position: absolute;
-z-index: 6;
-top: 167px;
-left: 50%;
-transform: translateX(-50%);
-
+  height: 270px;
+  position: absolute;
+  z-index: 6;
+  top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.program__title {
-  display: inline;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+
+.program__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  color: $white;
   text-align: center;
-  font-family: "Oswald", "Arial", sans-serif;
-
-  color: #ffffff;
-  position: absolute;
-  z-index: 3;
-  top: 10px;
   left: 50%;
-  margin-left: -125px;
-  width: 249px;
+  transform: translateX(-50%);
 }
 
-.program__text {
-font-size: 14px;
-line-height: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-  z-index: 5;
-  position: absolute;
-  top: 124px;
-  left: 50%;
-  margin-left: -99px;
+.program__title {
 
 }
+
 
 .program__link {
   margin: 440px auto 0;
   text-align: center;
-    display: block;
-    width: 280px;
-height: 40px;
-left: 20px;
-top: 440px;
-background: #68B738;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-color: $white;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
-text-decoration: none;
+  display: block;
+  width: 280px;
+  height: 40px;
+  left: 20px;
+  top: 440px;
+  background: #68B738;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
